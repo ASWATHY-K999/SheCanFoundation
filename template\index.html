@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>She Can Foundation</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static',
+          filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <div class="container">
+
+        <div class="left-section">
+
+            <img src="{{ url_for('static',
+                                 filename='logo.png') }}"
+                 class="logo">
+
+            <h1>SHE CAN FOUNDATION</h1>
+
+            <h3>
+                NGO Registered Under the Indian Society Act, 1860
+            </h3>
+
+            <p>
+                We are She Can Foundation, a non-governmental
+                organization dedicated to empowering women
+                and creating a more equitable society.
+                We provide support, resources, education,
+                leadership training, and opportunities for
+                women in communities across the globe.
+            </p>
+
+    
+
+   
+
+            <div class="contact-box">
+
+                <h4>Get in Touch</h4>
+
+                <p>
+                    Email:
+                    president@shecanfoundation.org
+                </p>
+
+                <p>
+                    Contact:
+                    +91-8283841830
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="right-section">
+
+            <div class="form-box">
+
+                <h2>Contact Us</h2>
+
+                <form action="/submit"
+                      method="POST">
+
+                    <input type="text"
+                           name="name"
+                           placeholder="Enter Your Name"
+                           required>
+
+                    <input type="email"
+                           name="email"
+                           placeholder="Enter Your Email"
+                           required>
+
+                    <textarea name="message"
+                              placeholder="Enter Your Message"
+                              required></textarea>
+
+                    <button type="submit">
+                        Submit
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
